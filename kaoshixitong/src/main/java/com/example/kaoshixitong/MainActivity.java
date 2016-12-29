@@ -167,12 +167,15 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this,"题库数量不足，请重新输入",Toast.LENGTH_SHORT).show();
                         shuliang.setText("");
                     }
-                    else {
+                    else if(sl2>=1 && sl2<=30){
                         Intent inter=new Intent(MainActivity.this,dati.class);
                         inter.putExtra("kaosheng",datiname);
                         inter.putExtra("timushuliang",datishuliang);
                         startActivity(inter);
-                        
+                    }
+                    else {
+                        Toast.makeText(MainActivity.this,"题目数量要小于30题",Toast.LENGTH_SHORT).show();
+                        shuliang.setText("");
                     }
 
                 }
