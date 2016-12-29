@@ -32,4 +32,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
     compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.1'
+}
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
 }
