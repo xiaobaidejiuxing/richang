@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(inter);
                     }
                     else {
-                        Toast.makeText(MainActivity.this,"题目数量要小于30题",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"题目数量要小于30题且大于0题",Toast.LENGTH_SHORT).show();
                         shuliang.setText("");
                     }
 

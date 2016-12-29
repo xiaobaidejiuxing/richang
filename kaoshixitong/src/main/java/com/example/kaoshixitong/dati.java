@@ -37,6 +37,7 @@ public class dati extends AppCompatActivity {
     public TextView xxb;
     public TextView xxc;
     public TextView xxd;
+    public Button xiyiti;
     int datishuliang;
     ArrayList<String> xxzqid = new ArrayList();
     int dqsl;
@@ -113,8 +114,11 @@ public class dati extends AppCompatActivity {
         sp= (Spinner) findViewById(R.id.dtspinner);
         xianshi();
 
-        final Button xiyiti= (Button) findViewById(R.id.button7);
+       xiyiti= (Button) findViewById(R.id.button7);
         Button shangyiti= (Button) findViewById(R.id.button6);
+        if(dqsl==datishuliang){
+            xiyiti.setText("提交");
+        }
         
         xiyiti.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -203,6 +207,7 @@ public class dati extends AppCompatActivity {
 
             }
         });
+        
         
         //通过一个数组保存选的答案
         xx_zq1[xianshishuliang]=xx_zq[0];
